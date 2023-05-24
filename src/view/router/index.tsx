@@ -1,11 +1,11 @@
 import React from "react";
 import {createBrowserRouter} from 'react-router-dom';
-import {HomePage} from "../pages/homePage/HomePage";
+import {Home} from "../pages/home/Home";
 
 const routes = [
     {
         path: '/',
-        element: <HomePage/>,
+        element: <Home/>,
     },
 ];
 
