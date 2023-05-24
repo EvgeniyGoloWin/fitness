@@ -1,7 +1,12 @@
 import React from "react";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./view/router";
+import {RouterProvider} from "react-router-dom";
+import {router} from "./view/router";
+import {ThemeProvider} from "@mui/material";
+import {theme} from "./init/constants";
+import {Provider} from "react-redux";
+import store from "./init/store/store";
 
 export const App = () => {
-    return <RouterProvider router={router} />;
+    return <Provider store={store}><ThemeProvider theme={theme}> <RouterProvider
+        router={router}/></ThemeProvider></Provider>;
 };
