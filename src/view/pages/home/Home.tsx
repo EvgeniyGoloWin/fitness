@@ -1,9 +1,5 @@
 import React from 'react';
 
 export const Home = () => {
-    return (
-        <div>
-    fdапапапа
-        </div>
-    );
+  return <div>fdапапапа</div>;
 };

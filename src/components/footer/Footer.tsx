@@ -1,10 +1,6 @@
 import React from 'react';
 
 export const Footer = () => {
-    return (
-        <footer>
-            About us
-        </footer>
-    );
+  console.log('dds');
+  return <footer>About us</footer>;
 };
-
