@@ -29,13 +29,13 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
+      "eslint npm run eslint",
       "prettier --write"
     ]
   },
   "scripts": {
     "lint-staged": "lint-staged",
-    "lint": "eslint src --ext .tsx,.ts",
+    "eslint": "eslint src --ext .tsx,.ts",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
