@@ -22,6 +22,14 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"]
+  },
   "scripts": {
     "lint-staged": "lint-staged",
     "lint": "eslint --ext .js,.jsx --ignore-path .gitignore .",
