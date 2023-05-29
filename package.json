@@ -24,18 +24,20 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "bash pre-push"
     }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint npm run eslint",
-      "prettier --write"
+      "npm run eslint",
+      "npm run format"
     ]
   },
   "scripts": {
+    "format-check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "eslint-check": "eslint src --ext .tsx,.ts",
     "lint-staged": "lint-staged",
-    "eslint": "eslint src --ext .tsx,.ts",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "start": "react-scripts start",
     "build": "react-scripts build",

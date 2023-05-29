@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-
-
-npm run eslint
+git add .
+npm run eslint-check
+npm run format-check
+exit $?
