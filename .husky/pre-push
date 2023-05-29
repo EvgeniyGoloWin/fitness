@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+npm run eslint-check
+npm run format-check
