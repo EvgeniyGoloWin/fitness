@@ -1,7 +1,12 @@
 #!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
 
-git add .
 npm run eslint-check
+eslint_exit_code=$?
+
+if [ $eslint_exit_code -ne 0 ]; then
+  echo "ESLint found errors. Commit aborted."
+  exit 1
+fi
+
 npm run format-check
 exit $?
