@@ -1,0 +1,38 @@
+.wrapper_registration {
+    background-image: url('../../../../assets/image/registr_bkg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.registration_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 35px;
+    margin-right: 950px;
+    box-shadow: 0 2px 4px rgb(255, 204, 0);
+}
+
+.registration_form_title {
+    color: white;
+}
+
+.registration_form_input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.registration_form_btn {
+    padding: 10px;
+    width: 300px;
+    background-color: #cdcaca;
+}
