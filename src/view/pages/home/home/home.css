@@ -1,0 +1,69 @@
+.wrapper_home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    all: initial;
+}
+
+.left_content {
+    border-radius: 20px;
+    width: 40%;
+    background-image: url("../../../../assets/image/crossfit.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid black;
+    padding: 10px;
+    height: 90vh;
+    transition: background-color 0.3s ease;
+}
+
+.left_content:hover {
+    background-color: #0ff510;
+}
+
+.left_content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left_content_description {
+    text-align: center;
+    color: #666;
+}
+
+.right_content {
+    border-radius: 20px;
+    width: 40%;
+    background-image: url("../../../../assets/image/training.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid black;
+    padding: 10px;
+    height: 90vh;
+    transition: background-color 0.3s ease;
+}
+
+.right_content:hover {
+    background-color: rgba(0, 140, 255, 0.8);
+}
+
+.right_content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.right_content_description {
+    text-align: center;
+    color: #666;
+}
